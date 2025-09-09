@@ -1,0 +1,44 @@
+body{
+    font-family: Arial;
+    margin: auto;
+    margin:
+}
+
+header, footer {
+    background-color: gray;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+header{
+    font-size: 1.5em;
+}
+
+main{
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+img{
+    display: block;
+    width: 100%;
+    box-shadow: 0 0 39px gray;
+}
+
+section{
+    background-color: lightgray;
+    padding: 10px;
+    margin: 10px 0px;
+}
+
+main h2{
+    margin: 0px;
+    font-size: 20px;
+    border-bottom: black solid 2px;
+}
+
+main h1{
+    text-align: center;
+    font-size: x-large;
+}
