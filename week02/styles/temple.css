@@ -1,18 +1,18 @@
 body{
     font-family: Arial;
-    margin: auto;
-    margin:
+    /* margin: auto;
+    margin: */
 }
 
 header, footer {
     background-color: gray;
-    padding: 10px;
+    padding: 10px 0px;
     color: white;
     text-align: center;
 }
 
 header{
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 main{
@@ -20,10 +20,21 @@ main{
     max-width: 300px;
 }
 
+h1{
+    text-align: center;
+    font-size: x-large;
+}
+
+h2{
+    margin: 0px;
+    font-size: 20px;
+    border-bottom: black solid 2px;
+}
+
 img{
-    display: block;
     width: 100%;
-    box-shadow: 0 0 39px gray;
+    height: auto;
+    box-shadow: 0 0 30px gray;
 }
 
 section{
@@ -32,13 +43,7 @@ section{
     margin: 10px 0px;
 }
 
-main h2{
-    margin: 0px;
-    font-size: 20px;
-    border-bottom: black solid 2px;
+section p{
+    margin-right: 10px;
 }
 
-main h1{
-    text-align: center;
-    font-size: x-large;
-}
