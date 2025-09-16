@@ -1,6 +1,14 @@
 :root {
     --bright-blue: rgb(34, 13, 216);
     --border-color: rgb(0 0 0 / 20%);
+
+/*This removes all browser defaults*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 }
 
 nav {
@@ -24,21 +32,23 @@ main img{
     border: 3px solid var(--border-color);
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    float: right;
 }
  aside{
     width: 20rem;
-    margin: 1rem;
-    border: 2px solid var(--border-color);
-    padding-left: 100px;
-    padding-right: 100px;
-    background-color: khaki;
-    color: HotPink;
     text-align: center;
+    position: relative;
  }
 
  aside img{
     width: 200px;
     height: auto;
+ }
+
+ aside h2{
+    position: absolute;
+    top: 47px;
+    left: 75px;
  }
 
 h1 {
@@ -54,4 +64,17 @@ footer{
     border-top: 1px solid black;
     text-align: center;
 
+}
+
+/*Class Selectors*/
+.box{
+    margin: 1rem;
+    border: 1px solid black;
+    padding: 1rem;
+    background-color: rgb(139, 222, 173);
+    color: rgb(185, 133, 65);
+}
+
+.section-about-me{
+    height: 150px;
 }
