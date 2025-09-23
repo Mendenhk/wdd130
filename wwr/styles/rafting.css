@@ -13,7 +13,7 @@
 }
 
 body {
-    font-family: (--body-font);
+    font-family: var(--body-font);
     color: var(--main-text-color);
 }
 
@@ -23,7 +23,7 @@ header, main, footer {
 }
 
 h1, h2 {
-    font-family: far(--heading-font);
+    font-family: var(--heading-font);
     color: var(--main-text-color);
 }
 
