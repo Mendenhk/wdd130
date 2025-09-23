@@ -86,3 +86,8 @@ h1 {
     margin-right: 5px;
     border: 2px solid black;
 }
+
+footer img {
+    width: 40px;
+    margin: 0px 5px;
+}
