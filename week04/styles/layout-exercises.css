@@ -1,4 +1,5 @@
-* {
+
+/* next task is exercise 3* { */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -24,18 +25,25 @@ div {
 .flex {
     background-color: #aba;
     /* write declarations here */
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .grid {
     background-color: #abb;
     /* enter declarations here */
+    display: grid;
+    place-items: center;
 
 }
 
 .container2 {
     /* write declarations here */
-
+    display: flex;
+    /* flex-direction: horizontal; */
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .two {
