@@ -1,6 +1,7 @@
 :root {
     --bright-blue: rgb(34, 13, 216);
     --border-color: rgb(0 0 0 / 20%);
+}
 
 /*This removes all browser defaults*/
 *{
@@ -9,22 +10,43 @@
     box-sizing: border-box;
 }
 
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
 }
 
 nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     background-color: var(--bright-blue);
     padding: 10px
 }
 
 nav a {
     color: white;
+    text-decoration: none;
     display: block;
-    padding: 20px;
+    padding: 1.2rem;
 }
 
-main{
-    max-width: 800px;
+.grid {
+    display: grid;
+    align-items: center;
 }
+
+main {
+    grid-column: 2/3;
+    margin: 1rem;
+}
+
+ aside{
+    position: relative;
+    width: 20rem;
+    text-align: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+ }
 
 main img{
     width: 150px;
@@ -34,25 +56,24 @@ main img{
     box-shadow: 0 0 30px gray;
     float: right;
 }
- aside{
-    width: 20rem;
-    text-align: center;
-    position: relative;
- }
 
  aside img{
-    width: 200px;
+    width: 180px;
     height: auto;
+    border: 1px solid black;
+    padding: 2px;
  }
 
  aside h2{
     position: absolute;
-    top: 47px;
+    top: 20px;
     left: 75px;
  }
 
 h1 {
     color: var(--bright-blue);
+    margin: 10px 0;
+    border-bottom: 2px solid black;
 }
 
 p {
