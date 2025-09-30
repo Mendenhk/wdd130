@@ -22,8 +22,21 @@
             </fieldset>
             <fieldset>
                 <legend>Questions</legend>
-                <!--form elements will go here-->
+                <label for="browser">What is your favorite internet browser?</label>
+                <select id="browser" name="browser">
+                    <option value="chrome">Chrome</option>
+                    <option value="safari">Safari</option>
+                    <option value="edge">Edge</option>
+                </select>
+                <br> <!--remove if using CSS to do the same thing-->
+                <label for="pet">Do you have a household pet?</label>
+                <input type="checkbox" id="pet" name="pet">
+                <br> <!--remove if doing new line with CSS-->
+                <label for="feedback">List the places you have lived: </label>
+                <textarea id="feedback" name="feedback" rows="4"
+                    placeholder="Cedar City Utah, Provo Utah, Tacoma Washington"></textarea>
             </fieldset>
+            <button type="submit">Submit Poll</button>
         </form>
     </main>
     <footer>
