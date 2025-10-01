@@ -5,33 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/poll-form.css">
+</head>
 
 <body>
     <header>
-
+        <h1>WDD 130 | HTML Form - User Poll</h1>
     </header>
     <main>
         <form>
             <fieldset>
                 <legend>Contact Information</legend>
-                <label for="Full Name">Full Name:</label>
-                <input type="text" id="Full Name" name="Full Name">
-                <br> <!--Will be removed if the new line is to be performed with CSS-->
-                <label for="useremail">Email:</label>
-                <input type="email" id="useremail" name="useremail">
+                <div class="form-item" class="column2">
+                    <label for="Full Name">Full Name:</label>
+                    <input type="text" id="Full Name" name="Full Name">
+                </div>
+                <div class="form-item" class="column2">
+                    <label for="useremail">Email:</label>
+                    <input type="email" id="useremail" name="useremail">
+                </div>
             </fieldset>
             <fieldset>
                 <legend>Questions</legend>
-                <label for="browser">What is your favorite internet browser?</label>
-                <select id="browser" name="browser">
-                    <option value="chrome">Chrome</option>
-                    <option value="safari">Safari</option>
-                    <option value="edge">Edge</option>
+                <div class="form-item" class="column1">
+                    <label for="browser">What is your favorite internet browser?</label>
+                    <select id="browser" name="browser">
+                        <option value="chrome">Chrome</option>
+                        <option value="safari">Safari</option>
+                        <option value="edge">Edge</option>
+                </div>
                 </select>
-                <br> <!--remove if using CSS to do the same thing-->
-                <label for="pet">Do you have a household pet?</label>
-                <input type="checkbox" id="pet" name="pet">
-                <br> <!--remove if doing new line with CSS-->
+                <div class="form-items" class="column1">
+                    <label for="pet">Do you have a household pet?</label>
+                    <input type="checkbox" id="pet" name="pet">
+                </div>
                 <label for="feedback">List the places you have lived: </label>
                 <textarea id="feedback" name="feedback" rows="4"
                     placeholder="Cedar City Utah, Provo Utah, Tacoma Washington"></textarea>
