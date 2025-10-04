@@ -2,9 +2,11 @@
     --main-color: darkblue;
     --secondary-color: white;
     --main-text-color: black;
-    --tertiary-color: rgba(255, 255, 240, 0.5);
     --heading-font: "Times New Roman", serif;
     --body-font: Helvetica, sans-serif;
+
+    --border-color: rgba(227, 227, 219, 1);
+    --section-color: rgba(227, 227, 219, 0.5);
 }
 
 *{
@@ -18,19 +20,13 @@ body {
     color: var(--main-text-color);
 }
 
+/*auto centers all elements horizontally*/
 header, main, footer {
     width: 840px;
-    margin: 0 auto; /*auto centers all elements*/
-}
-
-h1, h2 {
-    font-family: var(--heading-font);
-    color: var(--main-text-color);
-}
-
-nav, p, section, article {
-    margin: 16px;
-    padding: 8px;
+    margin: 0 auto; 
+    
+    margin: 1rem;
+    padding: 1rem;
 }
 
 header{
@@ -55,102 +51,108 @@ header ul{
     justify-content: space-evenly;
 }
 
-.hero{
-    position: relative;
+.address-div {
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
-.hero img {  /*applies to the background image "rafting photo"*/
-    display: block;
+.address-div h1, p {
+    padding: 0.1rem;
+}
+
+.map-form-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.map-div {
+      position: relative;
+      width: 100%;
+      padding-top: 100%; 
+    }
+
+/*this code causes the map to adjust to the cell size*/
+.map-div iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
+    border: 0;
 }
 
-.hero h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%; /*spans entire block parent, like a block element*/
-    padding: 16px;
-    text-align: center;
-    opacity: 0.7;
-    color: var(--secondary-color);
-    background-color: var(--main-color);
+form {
+    margin-right: 2rem;
 }
 
-.hero article {
-    position: absolute;
-    top: 850px;
+.column {
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    margin: 0.5rem;
+    align-items: center;
 }
 
-/*applies to the <article> <p>, text starting with "Purpose:...*/
-.purpose { 
-    color: var(--secondary-color);
-    background-color: var(--main-color);
-    opacity: 0.7;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-left: 40px;
-}
-
-/*applies to the sections with the classes "History" and "Adventure" h2*/
-.history h2, .adventure h2 {
-    background-color: var(--main-color);
-    color: var(--secondary-color);
-    text-align: center;
-}
-
-/*applies to the image of a customer/worker in the article*/
-.hero article img { 
-    float: right;
-    width: 100px;
-    margin-top: 20px;
-    margin-right: 20px;
-    border: 2px solid black;
-    /*the following two are because the image was behind .purpose*/
-    position: relative;
-    z-index: 1;
-}
-
-/*applies to the <section> with class=history*/
-.history{
+.radio-grid {
     display: grid;
-    grid-template: 1fr 4fr / 2fr 1fr 2fr;
-    grid-gap: 5px;
+    grid-template-columns: 1fr 5fr;
+    gap: 10px;
+    margin: 1rem;
+    margin-left: 0px;
 }
 
-.history h2{
-    grid-column: 1/4;
-    grid-row: 1/2;
+input[type="text"] {
+    height: 30px;
 }
 
-.history img{
-    width:  100px;
-    height: auto;
-    grid-column: 2/3;
-    grid-row: 2/3;
+input[type="email"] {
+    height: 30px;
 }
 
-.history-paragraph-left{
-    grid-column: 3/4;
+textarea, button {
+    width: 100%;
 }
 
-/*applies to the two <p> and the <img>, allows me to center them horizontally in their grid area.*/
-.history .item{
-    justify-self: center;
+textarea {
+    height: 100px;
 }
 
-/*applies to the <section> with class="adventure"*/
-.adventure{
+/*applies to three elements at bottom of form*/
+.margin {
+    margin-top: 1rem;
+}
+
+button {
+    display: block;
+    background-color: darkblue;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+/*applies grid with three columns and two rows to .emp-profile-section*/
+.emp-profile-section{
     display: grid;
-    grid-template: 1fr 4fr / repeat(5, 1fr);
+    grid-template: 1fr 4fr / repeat(3, 1fr);
     grid-gap: 5px;
+    border: 1px solid var(--border-color);
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: var(--section-color);
 }
 
-.adventure h2{
+/*applies to the ".emp-profile-section" h2*/
+.emp-profile-section h2{
     grid-column: 1/6;
     grid-row: 1/2;
+    text-align: center;
 }
 
-.adventure img{
+figure img{
     width: 100px;
     height: auto;
 }
@@ -185,4 +187,8 @@ footer img {
 /*applies to the Nav and <a> sections in the footer*/
 .social-media a {
     text-decoration: none;
+}
+
+::placeholder {
+    color: rgba(0, 0, 0, 0.25);
 }

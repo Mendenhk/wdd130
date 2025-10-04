@@ -1,0 +1,198 @@
+/*repair all of this file and make it match up with contact.css, and rename it to rafting.css
+
+:root {
+    --main-color: darkblue;
+    --secondary-color: white;
+    --main-text-color: black;
+    --tertiary-color: rgba(255, 255, 240, 0.5);
+    --heading-font: "Times New Roman", serif;
+    --body-font: Helvetica, sans-serif;
+    /*specifically for contact.html*/
+    --border-color: rgba(227, 227, 219, 1);
+    --section-color: rgba(227, 227, 219, 0.5); 
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--main-text-color);
+}
+
+/*auto centers all elements horizontally*/
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+    /*added for contact.html*/
+    /* margin: 1rem;
+    padding: 1rem; */
+}
+
+/*removed in contact*/
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--main-text-color);
+}
+
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+}
+
+header img{
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header nav{
+    background-color: var(--secondary-color);
+    margin-left: 20px;
+}
+
+header ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.hero{
+    position: relative;
+}
+
+.hero img {  /*applies to the background image "rafting photo"*/
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%; /*spans entire block parent, like a block element*/
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    color: var(--secondary-color);
+    background-color: var(--main-color);
+}
+
+.hero article {
+    position: absolute;
+    top: 850px;
+}
+
+/*applies to the <article> <p>, text starting with "Purpose:...*/
+.purpose { 
+    color: var(--secondary-color);
+    background-color: var(--main-color);
+    opacity: 0.7;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 40px;
+}
+
+/*applies to the sections with the classes "History" and "Adventure" h2*/
+.history h2, .adventure h2 {
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+/*applies to the image of a customer/worker in the article*/
+.hero article img { 
+    float: right;
+    width: 100px;
+    margin-top: 20px;
+    margin-right: 20px;
+    border: 2px solid black;
+    /*the following two are because the image was behind .purpose*/
+    position: relative;
+    z-index: 1;
+}
+
+/*applies to the <section> with class=history*/
+.history{
+    display: grid;
+    grid-template: 1fr 4fr / 2fr 1fr 2fr;
+    grid-gap: 5px;
+}
+
+.history h2{
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+.history img{
+    width:  100px;
+    height: auto;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.history-paragraph-left{
+    grid-column: 3/4;
+}
+
+/*applies to the two <p> and the <img>, allows me to center them horizontally in their grid area.*/
+.history .item{
+    justify-self: center;
+}
+
+/*applies to the <section> with class="adventure"*/
+.adventure{
+    display: grid;
+    grid-template: 1fr 4fr / repeat(5, 1fr);
+    grid-gap: 5px;
+}
+
+.adventure h2{
+    grid-column: 1/6;
+    grid-row: 1/2;
+}
+
+.adventure img{
+    width: 100px;
+    height: auto;
+}
+
+/*creates a flex-box of each figure, then aligns the img and figcaption to center (centers them)*/
+figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 200px auto 200px;
+}
+
+footer p {
+    grid-column: 2/3;
+    text-align: center;
+}
+
+/*a class of the footer's <nav> element*/
+.social-media {
+    grid-column: 3/4;
+    justify-self: end;
+}
+
+footer img {
+    width: 40px;
+}
+
+/*applies to the Nav and <a> sections in the footer*/
+.social-media a {
+    text-decoration: none;
+}
