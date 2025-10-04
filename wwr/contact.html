@@ -23,43 +23,48 @@
         </nav>
     </header>
     <main>
-        <div class="possible-parent-div"></div>
         <div class="address-div">
-            <h1>About Us -- KM Rafting Co.</h1>
+            <h1>KM Rafting Co.</h1>
             <p>2001 Oolong street</p>
             <p>Coloma, California</p>
             <p class="phone-maybe-change-to-a-link">+1 999-999 9999</p>
             <p class="email-contact">info@whitewater.com</p>
         </div>
-        <div class="map-div">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6218.7741693959615!2d-120.89368580626207!3d38.80068307757775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1759523680653!5m2!1sen!2sus"
-                width="600" height="450" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="contact-form-div">
-            <div>
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Placeholder">
+        <div class="map-form-div">
+            <div class="map-div">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6218.7741693959615!2d-120.89368580626207!3d38.80068307757775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1759523680653!5m2!1sen!2sus"
+                    width="600" height="450" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div>
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email" placeholder="Placeholder">
-            </div>
-            <div>
-                <label>Message Purpose</label>
-                <input type="radio" id="inquiry" name="inquiry">
-                <label for="inquiry">General Inquiry</label>
-                <input type="radio" id="question" name="question">
-                <label for="question">Reservation Question</label>
-                <input type="radio" id="suggestion" name="suggestion">
-                <label for="suggestion">Website Suggestion</label>
-            </div>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Type here"></textarea>
-            <input type="checkbox" id="subscribe" name="subscribe">
-            <label for="subscribe">Please Subscribe me tot he monthly newsletter</label>
-            <button type="submit">Get in Touch!</button>
+            <form>
+                <div class="form-top-div">
+                    <div class="column">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Placeholder">
+                    </div>
+                    <div class="column">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Placeholder">
+                    </div>
+                    <div class="column">
+                        <label>Message Purpose</label>
+                        <div class="radio-grid">
+                            <input type="radio" id="inquiry" name="inquiry">
+                            <label for="inquiry">General Inquiry</label>
+                            <input type="radio" id="question" name="question">
+                            <label for="question">Reservation Question</label>
+                            <input type="radio" id="suggestion" name="suggestion">
+                            <label for="suggestion">Website Suggestion</label>
+                        </div>
+                    </div>
+                </div>
+                <label for="message" class="margin">Message</label>
+                <textarea id="message" name="message" placeholder="Type here"></textarea>
+                <input type="checkbox" id="subscribe" name="subscribe" class="margin">
+                <label for="subscribe">Please Subscribe me tot he monthly newsletter</label>
+                <button type="submit" class="margin">Get in Touch!</button>
+            </form>
         </div>
         <section class="emp-profile-section">
             <h2>We Are Here to Serve You</h2>
