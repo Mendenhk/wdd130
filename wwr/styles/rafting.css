@@ -255,8 +255,8 @@ footer img {
 .hero article img { 
     float: right;
     width: 100px;
-    margin-top: 20px;
-    margin-right: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
     border: 2px solid black;
     /*the following two are because the image was behind .purpose*/
     position: relative;
