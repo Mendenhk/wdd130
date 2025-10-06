@@ -29,6 +29,11 @@ header, main, footer {
     padding: 1rem;
 }
 
+/*adjust header spacing*/
+header {
+    margin-bottom: 0px;
+}
+
 /*only for about.html*/
 .about-h1, .about-h2 {
     font-family: var(--heading-font);
