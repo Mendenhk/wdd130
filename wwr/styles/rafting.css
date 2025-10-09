@@ -428,6 +428,7 @@ table {
   letter-spacing: 1px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 1rem;
 }
 
 caption {
@@ -439,12 +440,11 @@ caption {
 
 thead,
 tfoot {
-  background-color: rgb(228 240 245);
+  background-color: rgb(241, 224, 170);
 }
 
 thead th{
-  background-color: #000;
-  color: #fff;
+  background-color: rgb(241, 224, 170);
 }
 
 th,
