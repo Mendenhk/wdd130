@@ -34,10 +34,15 @@ header {
     margin-bottom: 0px;
 }
 
-/*only for about.html*/
+/*only for about.html and index.html*/
 .about-h1, .about-h2 {
     font-family: var(--heading-font);
     color: var(--main-text-color);
+}
+
+/*for index h1*/
+.index-h3 {
+    text-align: center;
 }
 
 header{
@@ -71,10 +76,15 @@ header ul{
     padding: 0.1rem;
 }
 
-.map-form-div {
+.map-form-div, .index-action-newsletter{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+}
+
+/*index.html call to action button*/
+.index-action-button {
+  padding: 3rem;
 }
 
 .map-div {
@@ -307,3 +317,5 @@ footer img {
     grid-column: 1/6;
     grid-row: 1/2;
 }
+
+/*this section applies specifically to the about page*/
