@@ -377,3 +377,92 @@ footer img {
     justify-self: center;
     align-self: center;
 }
+
+/*applies to the rafting.html page*/
+.trips-contact {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.trips-contact p {
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.trips-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: darkblue;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+/*trips page grid*/
+.trips-offerings {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.trips-offerings img {
+    width: 150px;
+    border: 5px solid tan;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+table {
+  border-collapse: collapse;  merges borders inbetween cells into a single border.
+  border: 2px solid rgb(140 140 140);
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+caption {
+  caption-side: bottom;
+  padding: 10px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+thead,
+tfoot {
+  background-color: rgb(228 240 245);
+}
+
+thead th{
+  background-color: #000;
+  color: #fff;
+}
+
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+}
+
+td:last-of-type {
+  text-align: center;
+}
+
+tbody > tr:nth-of-type(even) {
+  background-color: rgb(237 238 242);
+}
+
+tfoot th {
+  text-align: right;
+}
+
+tfoot td {
+  font-weight: bold;
+}
