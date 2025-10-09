@@ -82,9 +82,46 @@ header ul{
     gap: 30px;
 }
 
+.index-action-newsletter {
+  place-items: center;
+}
+
 /*index.html call to action button*/
-.index-action-button {
-  padding: 3rem;
+.index-heartbeat-button {
+    text-align: center;
+    display: inline-block; /* Keeps it button-like-not a block element */
+    padding: 30px 30px;
+    background: #ff6347;  /*starting color for animation, or color for unsupported animation.*/
+    color: var(--secondary-color); 
+    text-decoration: none;
+    border-radius: 5px; 
+    font-family: var(--body-font); 
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: heartbeat 3s ease-in-out 5, colorShift 3s ease-in-out 5; /* Combined animations */
+    /*The first attribute is a "call" to the animation function name.  ease-in-out starts animation slow, speeds to peak, and slows to end.  the last value is the number of times that the animation will run (can be up to infinity.*/
+    transition: all 0.3s ease; /* Smooth hover */
+}
+
+@keyframes heartbeat {
+    0% { transform: scale(1); } /* Resting */
+    14% { transform: scale(1.05); } /* First beat */
+    28% { transform: scale(1); } /* Rest */
+    42% { transform: scale(1.05); } /* Second beat */
+    70% { transform: scale(1); } /* Pause */
+}
+
+@keyframes colorShift {
+   0%, 100% { background-color: #ff0000; } /* Solid orange-red */
+    14%, 42% { background-color: #ff4500; } /* Solid red at beat peaks */
+    28%, 70% { background-color: #ff0000;} /* Back to orange-red */
+}
+
+.index-heartbeat-button:hover {
+    animation-play-state: paused; /* Pause both animations */
+    background: linear-gradient(45deg, #ff6347, #ff7f50); /* Lighter orange gradient */
+    transform: scale(1.02); /* Subtle lift */
 }
 
 .map-div {
