@@ -84,6 +84,7 @@ header ul{
 
 .index-action-newsletter {
   place-items: center;
+  margin-top: 1rem;
 }
 
 /*index.html call to action button*/
@@ -360,6 +361,7 @@ footer img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 5px;
+    margin-top: 1rem;
 }
 
 .index-purpose-h2 {
@@ -369,4 +371,9 @@ footer img {
 
 .index-img {
     width: 100%;
+}
+
+.grid-cell-centered {
+    justify-self: center;
+    align-self: center;
 }
