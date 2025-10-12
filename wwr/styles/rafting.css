@@ -40,6 +40,10 @@ header {
     color: var(--main-text-color);
 }
 
+.about-h2 {
+    padding-bottom: 1rem;
+}
+
 /*for index h1*/
 .index-h3 {
     text-align: center;
