@@ -369,7 +369,6 @@ footer img {
     display: grid;
     grid-template: 1fr 4fr / repeat(5, 1fr);
     grid-gap: 5px;
-    margin-top: 1rem;
 }
 
 .adventure h2{
