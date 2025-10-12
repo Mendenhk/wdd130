@@ -415,15 +415,23 @@ footer img {
 /*trips page grid*/
 .trips-offerings {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template: 1fr 5fr / 1fr 1fr 1fr;
     padding: 1rem;
     margin-top: 1rem;
 }
 
+.trips-offerings h2 {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-family: var(--heading-font);
+}
+
 .trips-offerings img {
     width: 150px;
-    border: 5px solid tan;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
 table {
@@ -446,11 +454,13 @@ caption {
 
 thead,
 tfoot {
-  background-color: rgb(241, 224, 170);
+  background-color: var(--main-color);
+  color: var(--secondary-color);
 }
 
 thead th{
-  background-color: rgb(241, 224, 170);
+  background-color: var(--main-color);
+  color: var(--secondary-color);
 }
 
 th,
